@@ -163,5 +163,7 @@ if [[ "$1" == "pip" || -z "$1" ]]; then
     $PYTHON_BIN_PATH -m pip install --no-cache-dir --no-build-isolation --no-deps pyvips==3.0.0 --break-system-packages
     $PYTHON_BIN_PATH -m pip install --no-cache-dir pyserial_asyncio==0.6 ezdxf==1.3.5 pypdf==5.3.1 --break-system-packages
 
+    $PYTHON_BIN_PATH -m pip install --no-cache-dir cadquery --break-system-packages #For .step support
+
     echo "✅ Windows MSYS2 dependency setup complete."
 fi

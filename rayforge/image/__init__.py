@@ -26,6 +26,7 @@ from .ruida.importer import RuidaImporter
 from .ruida.renderer import RUIDA_RENDERER
 from .svg.importer import SvgImporter
 from .svg.renderer import SVG_RENDERER
+from .step.importer import StepImporter
 
 logger = logging.getLogger(__name__)
 
@@ -208,6 +209,7 @@ renderer_by_importer_name: Dict[str, Renderer] = {
     "PdfImporter": PDF_RENDERER,
     "RuidaImporter": RUIDA_RENDERER,
     "SvgImporter": SVG_RENDERER,
+    "StepImporter": SVG_RENDERER,
 }
 
 __all__ = [
@@ -218,6 +220,7 @@ __all__ = [
     "PngImporter",
     "RuidaImporter",
     "SvgImporter",
+    "StepImporter",
     "import_file",
     "import_file_from_bytes",
     "importers",
